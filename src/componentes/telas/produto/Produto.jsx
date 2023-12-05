@@ -6,7 +6,7 @@ import Form from "./Form";
 function Produto() {
 
     const [listaObjetos, setListaObjetos] = useState([]);
-    const [listaCategorias, setListaCategorias] = useState()
+    const [listaCategorias, setListaCategorias] = useState([])
     const [alerta, setAlerta] = useState({ status: "", message: "" });
 
     // consulta na api 
@@ -43,11 +43,7 @@ function Produto() {
         }
     }
 
-    // método que vai ser executado toda vez que o componente é renderizado
-    useEffect(() => {
-        recuperaCategorias();
-        recuperaProdutos();
-    }, []);
+
 
     const [editar, setEditar] = useState(false);
     const [objeto, setObjeto] = useState({
@@ -115,6 +111,11 @@ function Produto() {
         setObjeto({...objeto, [name] : value});
     }
 
+    // método que vai ser executado toda vez que o componente é renderizado
+    useEffect(() => {
+        recuperaProdutos();
+        recuperaCategorias();        
+    }, []);
 
     return (
         <ProdutoContext.Provider value={

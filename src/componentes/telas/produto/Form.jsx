@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import Alerta from "../../Alerta";
-import CategoriaContext from "./ProdutoContext";
+import ProdutoContext from "./ProdutoContext";
 
 function Form() {
 
-    const { objeto, alerta, acaoCadastrar, handleChange, listaCategorias } = useContext(CategoriaContext);
+    const { objeto, alerta, acaoCadastrar, handleChange, listaCategorias } = useContext(ProdutoContext);
 
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     (() => {

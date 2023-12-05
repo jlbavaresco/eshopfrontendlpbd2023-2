@@ -1,11 +1,11 @@
 import { useContext } from "react";
-import CategoriaContext from "./ProdutoContext";
+import ProdutoContext from "./ProdutoContext";
 import Alerta from "../../Alerta";
 
 function Tabela() {
 
     // importo do contexto o que eu preciso usar
-    const { listaObjetos, alerta, remover, novoObjeto, editarObjeto } = useContext(CategoriaContext);
+    const { listaObjetos, alerta, remover, novoObjeto, editarObjeto } = useContext(ProdutoContext);
 
     return (
         <div style={{ padding: '20px' }}>
