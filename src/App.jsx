@@ -6,6 +6,7 @@ import Categoria from './componentes/telas/categoria/Categoria'
 import Home from './componentes/Home'
 import Menu from './componentes/Menu'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Produto from './componentes/telas/produto/Produto'
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
         path : "/categorias",
         element : <Categoria/>
       }
+      ,
+      {
+        path : "/produtos",
+        element : <Produto/>
+      }      
     ]
   }
 ])

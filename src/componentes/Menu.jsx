@@ -22,6 +22,7 @@ const Menu = () => {
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                    <li><NavLink className="dropdown-item" exact to="categorias">Categorias</NavLink></li>                                    
+                                   <li><NavLink className="dropdown-item" exact to="produtos">Produtos</NavLink></li>                                    
                                 </ul>
                             </li>
                         </ul>
